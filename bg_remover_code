@@ -1,0 +1,15 @@
+# required packages
+from rembg import remove
+from PIL import Image
+
+# Input / Output image
+
+input_patch = 'input_Image.jpeg'
+output_patch = 'output_image.png'
+
+Input = Image.open(input_patch)
+output = remove(Input)
+
+# result
+
+output.save(output_patch)
